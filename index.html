@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#10-abstract" id="toc-10-abstract" class="nav-link active" data-scroll-target="#10-abstract">[1.0] Abstract</a></li>
-  <li><a href="#20-applied-engineering" id="toc-20-applied-engineering" class="nav-link" data-scroll-target="#20-applied-engineering">[2.0] Applied engineering</a></li>
+  <li><a href="#20-some-tools-used" id="toc-20-some-tools-used" class="nav-link" data-scroll-target="#20-some-tools-used">[2.0] Some tools used</a></li>
   <li><a href="#30-selected-work" id="toc-30-selected-work" class="nav-link" data-scroll-target="#30-selected-work">[3.0] Selected work</a>
   <ul class="collapse">
   <li><a href="#driven-quadruple-pendulum" id="toc-driven-quadruple-pendulum" class="nav-link" data-scroll-target="#driven-quadruple-pendulum">Driven Quadruple Pendulum</a></li>
@@ -166,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="role">
 <p>Physics · Data Analytics · National University of Singapore</p>
 </div>
-<p>Undergraduate reading Physics with a second major in Data Analytics, at NUS College. My work sits where numerical methods meet experimental physics: writing the simulation or the analysis pipeline, then checking it against something measured.</p>
+<p>Hi! I am an undergraduate student reading Physics with a second major in Data Analytics, and I am also a part of NUS College. I love Physics (both as a subject and as a challenge) and particularly love the applications of Physics in seemingly unrelated areas such as AI and financial markets. My current experimental work has been spread across various fields including both simulation work as well as lab-bench work.</p>
 <p>This repository is the record of that work. Every project here ships the code, the data it ran on, the figures it produced, and the written report.</p>
 <div class="hero-links">
 <p><a href="https://github.com/Soham-Bhar/projects">Repository</a> <a href="https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md">Reuse conditions</a> <a href="#30-selected-work">Selected work</a></p>
@@ -175,8 +175,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="10-abstract" class="level2">
 <h2 class="anchored" data-anchor-id="10-abstract">[1.0] Abstract</h2>
-<p>Six laboratory experiments and three computational studies, drawn from the physics sequence at NUS. The emphasis throughout is on doing the numerical work by hand before reaching for a library, and on carrying uncertainty all the way through to the quoted result rather than stopping at a central value.</p>
-<p>Two things distinguish this collection from a folder of submitted coursework. First, the raw data is included: spreadsheets, instrument exports, simulation input decks. Second, the analysis that turned that data into each figure is included as well. A reader who doubts a number can follow it back to the measurement.</p>
+<p>Six laboratory experiments and three computational studies. The emphasis throughout is on doing the numerical work by hand before reaching for a library, and on meticulously handling uncertainty all the way through to the quoted final results.</p>
+<p>Two things distinguish this collection from a folder of submitted coursework. First, I have included some of the raw data. Spreadsheets, instrument exports, simulation input decks and so on. Second, the analysis that turned that data into each figure is included as well. A reader who doubts a number can follow it back to the measurement. That being said, I have deliberately excluded some data, scripts and results for the sake of brevity. For example, the XRD experiment alone had over 100 raw data files whereas my TRIM simulations had over 200 independent figures.</p>
+<p>Lastly, I have not included any of the work I did during my role as a research assistant intern working in thin-film skyrmionic magnetic tunnel junction characterisation at A*STAR and NUS. This is because much of my group’s research is confidential, and unpublished (as is the status-quo in research groups).</p>
 <div class="spec">
 <div>
 <span class="k">Degree</span><span class="v">B.Sc. Physics, second major in Data Analytics</span>
@@ -195,12 +196,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="20-applied-engineering" class="level2">
-<h2 class="anchored" data-anchor-id="20-applied-engineering">[2.0] Applied engineering</h2>
-<p>Tools used in the work below, rather than a list of everything encountered.</p>
+<section id="20-some-tools-used" class="level2">
+<h2 class="anchored" data-anchor-id="20-some-tools-used">[2.0] Some tools used</h2>
+<p>Here are some tools/languages used in the work below.</p>
 <p><span class="tag">Python</span> <span class="tag">NumPy</span> <span class="tag">SciPy</span> <span class="tag">Matplotlib</span> <span class="tag">Jupyter</span> <span class="tag">MATLAB</span> <span class="tag">R</span> <span class="tag">Typst</span> <span class="tag">LaTeX</span> <span class="tag">Quarto</span> <span class="tag">Git</span> <span class="tag">SRIM / TRIM</span> <span class="tag">Excel</span></p>
 <p><strong>Numerical methods.</strong> Fourth-order Runge-Kutta written from scratch, LU decomposition of a configuration-dependent mass matrix, eigenbasis decomposition against Airy functions, Monte-Carlo binary collision simulation, Poincaré sectioning, bifurcation mapping and Lyapunov divergence.</p>
-<p><strong>Experimental methods.</strong> Resonance spectroscopy, beam profiling, Hall measurement across carrier types and temperature, Bragg diffraction, torsion dynamometry, and error budgets propagated to the quoted figure.</p>
+<p><strong>Experimental methods.</strong> Resonance spectroscopy, beam profiling, Hall measurement across carrier types and temperature, Bragg diffraction, torsion dynamometry, and errors propagated to the quoted figure.</p>
 </section>
 <section id="30-selected-work" class="level2">
 <h2 class="anchored" data-anchor-id="30-selected-work">[3.0] Selected work</h2>
@@ -209,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="meta">
 <p>[3.1] PC3236 Computational Methods in Physics · Python, Jupyter, Typst</p>
 </div>
-<p>Four coupled masses with no closed-form solution, integrated with a hand-coded RK4 scheme at a fixed 1 ms step rather than a library solver, so the integration behaviour stays open to inspection. The 4x4 mass matrix is solved by LU decomposition at every stage. Validated against SciPy’s adaptive RK45 and agreeing to within one microradian over a 20 s trajectory, then characterised through Poincaré sections, bifurcation diagrams and Lyapunov divergence.</p>
+<p>Four coupled masses with no closed-form solution, numerically integrated with a hand-coded RK4 scheme at a fixed 1 ms step rather than a library solver, so the integration behaviour stays open to inspection. The 4x4 mass matrix is solved by LU decomposition at every stage. Validated against SciPy’s adaptive RK45 and agreeing to within one microradian over a 20 s trajectory, then characterised through Poincaré sections, bifurcation diagrams and Lyapunov divergence.</p>
 </section>
 <section id="quantum-bouncer" class="level3 entry">
 <h3 class="anchored" data-anchor-id="quantum-bouncer"><a href="./projects/quantum-bouncer/index.html">Quantum Bouncer</a></h3>
@@ -273,9 +274,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="60-terms" class="level2">
 <h2 class="anchored" data-anchor-id="60-terms">[6.0] Terms</h2>
-<p>Code is MIT licensed. Reports, figures and written content are CC BY-NC-ND 4.0, and every page of every report carries that notice. These are graded submissions published as a portfolio: they are not a study aid, and reproducing any part of them as your own work is plagiarism.</p>
+<p>Many of these are graded submissions published as a portfolio: they are not a study aid, and reproducing any part of them as your own work is plagiarism.</p>
 <p>Read the <a href="https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md">reuse conditions</a> before using anything here.</p>
-<p>Work from my research internship is excluded. That data and those results belong to the host laboratory and are not mine to publish.</p>
+<p>Work from my research internship is excluded. That data and those results belong to the research group and are not mine to publish.</p>
 
 
 </section>
