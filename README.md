@@ -1,10 +1,10 @@
 # Projects
 
 Coursework and personal projects by **Soham Bhar**, B.Sc. Physics with a second major in Data
-Analytics at the National University of Singapore.
+Analytics at the National University of Singapore. I am also a part of NUS College, NUS's honours college.
 
 Everything here is currently physics: computational simulations and laboratory work. Other
-projects will be added alongside it over time.
+projects will be added alongside it over time. Please also see the [Not included here](#not-included-here) section.
 
 Each project folder holds the code, the generated figures, and the written report.
 
@@ -43,5 +43,6 @@ Two licences apply, because code and writing need different terms:
 
 ## Not included here
 
-Work from my research internship is deliberately excluded. That data, the sample identifiers,
-and the unpublished results belong to the host laboratory and are not mine to publish.
+Work from my research internship and its related extension is deliberately excluded. That data, the sample identifiers,
+and the unpublished results are confidential and the work of tens of others. Hence, I cannot upload them.
+Additionally, I have not uploaded all scripts/figures/files etc. for all my Physics experiments as I felt that it would not be necessary to see hundreds of raw data files. Only some key files/figures and scripts are uploaded. 
