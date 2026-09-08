@@ -1,0 +1,174 @@
+====== H (10) into Skin_Human (W&W type 1)+Cort =======
+        SRIM-2013.00
+=========================================
+        Replacement Collisions       
+ See SRIM Outputs\TDATA.txt for calc. details   
+=========================================
+ See file: SRIM Outputs\TDATA.txt for data about the calculation
+ Ion    =  H   Energy = 39000 keV
+============= TARGET MATERIAL ======================================
+Layer  1 : Skin_Human (W&W type 1)
+Layer Width =     1.E+07 AAA ;
+  Layer # 1- Density = 10.56E22 atoms/cm3 = 1.09 g/cm3
+  Layer # 1-  H = 61.7 Atomic Percent = 10.0 Mass Percent
+  Layer # 1-  C = 12.9 Atomic Percent = 25.0 Mass Percent
+  Layer # 1-  N = 2.04 Atomic Percent = 4.60 Mass Percent
+  Layer # 1-  O = 23.1 Atomic Percent = 59.4 Mass Percent
+  Layer # 1-  S = 5.82 Atomic Percent = .300 Mass Percent
+  Layer # 1- Cl = .052 Atomic Percent = .300 Mass Percent
+  Layer # 1- Na = .054 Atomic Percent = .200 Mass Percent
+  Layer # 1-  K = 1.59 Atomic Percent = .100 Mass Percent
+Layer  2 : Cortical Bone  Adult (W&W)
+Layer Width =     4.E+07 AAA ;
+  Layer # 2- Density = 9.946E22 atoms/cm3 = 1.92 g/cm3
+  Layer # 2- Ca = 6.53 Atomic Percent = 22.5 Mass Percent
+  Layer # 2-  P = 3.86 Atomic Percent = 10.3 Mass Percent
+  Layer # 2-  H = 39.2 Atomic Percent = 3.40 Mass Percent
+  Layer # 2-  C = 15.0 Atomic Percent = 15.5 Mass Percent
+  Layer # 2-  N = 3.48 Atomic Percent = 4.20 Mass Percent
+  Layer # 2-  O = 31.6 Atomic Percent = 43.5 Mass Percent
+  Layer # 2-  S = .108 Atomic Percent = .300 Mass Percent
+  Layer # 2- Mg = 9.57 Atomic Percent = .200 Mass Percent
+Layer  3 : Brain (ICRP)
+Layer Width =     3.E+07 AAA ;
+  Layer # 3- Density = 10.41E22 atoms/cm3 = 1.03 g/cm3
+  Layer # 3-  O = 27.5 Atomic Percent = 73.9 Mass Percent
+  Layer # 3-  C = 6.23 Atomic Percent = 12.5 Mass Percent
+  Layer # 3-  H = 65.4 Atomic Percent = 11.0 Mass Percent
+  Layer # 3-  N = .565 Atomic Percent = 1.33 Mass Percent
+  Layer # 3-  P = 6.72 Atomic Percent = .350 Mass Percent
+  Layer # 3-  K = 4.71 Atomic Percent = .309 Mass Percent
+  Layer # 3- Cl = 4.02 Atomic Percent = .240 Mass Percent
+  Layer # 3- Na = 4.65 Atomic Percent = .179 Mass Percent
+Layer  4 : Brain Tumour (ICRP brain comp.)
+Layer Width =     2.E+07 AAA ;
+  Layer # 4- Density = 10.62E22 atoms/cm3 = 1.05 g/cm3
+  Layer # 4-  O = 27.5 Atomic Percent = 73.9 Mass Percent
+  Layer # 4-  C = 6.23 Atomic Percent = 12.5 Mass Percent
+  Layer # 4-  H = 65.4 Atomic Percent = 11.0 Mass Percent
+  Layer # 4-  N = .565 Atomic Percent = 1.33 Mass Percent
+  Layer # 4-  P = 6.72 Atomic Percent = .350 Mass Percent
+  Layer # 4-  K = 4.71 Atomic Percent = .309 Mass Percent
+  Layer # 4- Cl = 4.02 Atomic Percent = .240 Mass Percent
+  Layer # 4- Na = 4.65 Atomic Percent = .179 Mass Percent
+Layer  5 : Brain backing (ICRP)
+Layer Width =     4.E+07 AAA ;
+  Layer # 5- Density = 10.41E22 atoms/cm3 = 1.03 g/cm3
+  Layer # 5-  O = 27.5 Atomic Percent = 73.9 Mass Percent
+  Layer # 5-  C = 6.23 Atomic Percent = 12.5 Mass Percent
+  Layer # 5-  H = 65.4 Atomic Percent = 11.0 Mass Percent
+  Layer # 5-  N = .565 Atomic Percent = 1.33 Mass Percent
+  Layer # 5-  P = 6.72 Atomic Percent = .350 Mass Percent
+  Layer # 5-  K = 4.71 Atomic Percent = .309 Mass Percent
+  Layer # 5- Cl = 4.02 Atomic Percent = .240 Mass Percent
+  Layer # 5- Na = 4.65 Atomic Percent = .179 Mass Percent
+====================================================================
+ Total Ions calculated =10000.00
+ Total Target Vacancies     = 178 /Ion
+ Total Target Displacements = 180 /Ion
+ Total Target Replacement Collisions = 2 /Ion
+================================================================
+   Table Vacancy Units are  >>>>  Number /(Angstrom-Ion)  <<<<  
+================================================================
+  DEPTH (A)      Number
+------------   -----------
+1400000.E+00   0000.000000
+2800000.E+00   0000.000000
+4200000.E+00   0000.000000
+5600000.E+00   0000.000000
+7000000.E+00   0000.000000
+8400000.E+00   0000.000000
+9800000.E+00   0000.000000
+1120000.E+01   0000.000000
+1260000.E+01   0000.000000
+1400000.E+01   0000.000000
+1540000.E+01   0000.000000
+1680000.E+01   0000.000000
+1820000.E+01   0000.000000
+1960000.E+01   0000.000000
+2100000.E+01   0000.000000
+2240000.E+01   0000.000000
+2380000.E+01   0000.000000
+2520000.E+01   0000.000000
+2660000.E+01   0000.000000
+2800000.E+01   0000.000000
+2940000.E+01   0000.000000
+3080000.E+01   0000.000000
+3220000.E+01   0000.000000
+3360000.E+01   0000.000000
+3500000.E+01   0000.000000
+3640000.E+01   0000.000000
+3780000.E+01   0000.000000
+3920000.E+01   0000.000000
+4060000.E+01   0000.000000
+4200000.E+01   0000.000000
+4340000.E+01   0000.000000
+4480000.E+01   0000.000000
+4620000.E+01   0000.000000
+4760000.E+01   0000.000000
+4900000.E+01   0000.000000
+5040000.E+01   0000.000000
+5180000.E+01   0000.000000
+5320000.E+01   0000.000000
+5460000.E+01   0000.000000
+5600000.E+01   0000.000000
+5740000.E+01   0000.000000
+5880000.E+01   0000.000000
+6020000.E+01   0000.000000
+6160000.E+01   0000.000000
+6300000.E+01   0000.000000
+6440000.E+01   0000.000000
+6580000.E+01   0000.000000
+6720000.E+01   0000.000000
+6860000.E+01   0000.000000
+7000000.E+01   0000.000000
+7140000.E+01   0000.000000
+7280000.E+01   0000.000000
+7420000.E+01   0000.000000
+7560000.E+01   0000.000000
+7700000.E+01   0000.000000
+7840000.E+01   0000.000000
+7980000.E+01   0000.000000
+8120000.E+01   0000.000000
+8260000.E+01   0000.000000
+8400000.E+01   0000.000000
+8540000.E+01   0000.000000
+8680000.E+01   0000.000000
+8820000.E+01   0000.000000
+8960000.E+01   0000.000000
+9100000.E+01   0000.000000
+9240000.E+01   0000.000000
+9380000.E+01   0000.000000
+9520000.E+01   0000.000000
+9660000.E+01   0000.000000
+9800000.E+01   0000.000000
+9940000.E+01   0000.000000
+1008000.E+02   0000.000000
+1022000.E+02   0000.000000
+1036000.E+02   0000.000000
+1050000.E+02   0000.000000
+1064000.E+02   0000.000000
+1078000.E+02   0000.000000
+1092000.E+02   0000.000000
+1106000.E+02   0000.000000
+1120000.E+02   0000.000000
+1134000.E+02   0000.000000
+1148000.E+02   0000.000000
+1162000.E+02   0000.000000
+1176000.E+02   0000.000000
+1190000.E+02   0000.000000
+1204000.E+02   0000.000000
+1218000.E+02   0000.000000
+1232000.E+02   0000.000000
+1246000.E+02   0000.000000
+1260000.E+02   0000.000000
+1274000.E+02   0000.000000
+1288000.E+02   0000.000000
+1302000.E+02   0000.000000
+1316000.E+02   0000.000000
+1330000.E+02   0000.000000
+1344000.E+02   0000.000000
+1358000.E+02   0000.000000
+1372000.E+02   0000.000000
+1386000.E+02   0000.000000
+1400000.E+02   0000.000000

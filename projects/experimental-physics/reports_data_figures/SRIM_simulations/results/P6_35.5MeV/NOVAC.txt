@@ -1,0 +1,163 @@
+====== 35.5 MeV H into skin/skull/brain/tumour =======
+        SRIM-2013.00
+=========================================
+        Replacement Collisions       
+ See SRIM Outputs\TDATA.txt for calc. details   
+=========================================
+ See file: SRIM Outputs\TDATA.txt for data about the calculation
+ Ion    =  H   Energy = 35500 keV
+============= TARGET MATERIAL ======================================
+Layer  1 : Skin_Human (W&W type 1)
+Layer Width =     1.E+07 AAA ;
+  Layer # 1- Density = 10.56E22 atoms/cm3 = 1.09 g/cm3
+  Layer # 1-  H = 61.7 Atomic Percent = 10.0 Mass Percent
+  Layer # 1-  C = 12.9 Atomic Percent = 25.0 Mass Percent
+  Layer # 1-  N = 2.04 Atomic Percent = 4.60 Mass Percent
+  Layer # 1-  O = 23.1 Atomic Percent = 59.4 Mass Percent
+  Layer # 1-  S = 5.82 Atomic Percent = .300 Mass Percent
+  Layer # 1- Cl = .052 Atomic Percent = .300 Mass Percent
+  Layer # 1- Na = .054 Atomic Percent = .200 Mass Percent
+  Layer # 1-  K = 1.59 Atomic Percent = .100 Mass Percent
+Layer  2 : Cortical Bone  Adult (W&W)
+Layer Width =     4.E+07 AAA ;
+  Layer # 2- Density = 9.946E22 atoms/cm3 = 1.92 g/cm3
+  Layer # 2- Ca = 6.53 Atomic Percent = 22.5 Mass Percent
+  Layer # 2-  P = 3.86 Atomic Percent = 10.3 Mass Percent
+  Layer # 2-  H = 39.2 Atomic Percent = 3.40 Mass Percent
+  Layer # 2-  C = 15.0 Atomic Percent = 15.5 Mass Percent
+  Layer # 2-  N = 3.48 Atomic Percent = 4.20 Mass Percent
+  Layer # 2-  O = 31.6 Atomic Percent = 43.5 Mass Percent
+  Layer # 2-  S = .108 Atomic Percent = .300 Mass Percent
+  Layer # 2- Mg = 9.57 Atomic Percent = .200 Mass Percent
+Layer  3 : Brain (ICRP)
+Layer Width =     3.E+07 AAA ;
+  Layer # 3- Density = 10.41E22 atoms/cm3 = 1.03 g/cm3
+  Layer # 3-  O = 27.5 Atomic Percent = 73.9 Mass Percent
+  Layer # 3-  C = 6.23 Atomic Percent = 12.5 Mass Percent
+  Layer # 3-  H = 65.4 Atomic Percent = 11.0 Mass Percent
+  Layer # 3-  N = .565 Atomic Percent = 1.33 Mass Percent
+  Layer # 3-  P = 6.72 Atomic Percent = .350 Mass Percent
+  Layer # 3-  K = 4.71 Atomic Percent = .309 Mass Percent
+  Layer # 3- Cl = 4.02 Atomic Percent = .240 Mass Percent
+  Layer # 3- Na = 4.65 Atomic Percent = .179 Mass Percent
+Layer  4 : Brain Tumour (ICRP brain comp.)
+Layer Width =     2.E+07 AAA ;
+  Layer # 4- Density = 10.62E22 atoms/cm3 = 1.05 g/cm3
+  Layer # 4-  O = 27.5 Atomic Percent = 73.9 Mass Percent
+  Layer # 4-  C = 6.23 Atomic Percent = 12.5 Mass Percent
+  Layer # 4-  H = 65.4 Atomic Percent = 11.0 Mass Percent
+  Layer # 4-  N = .565 Atomic Percent = 1.33 Mass Percent
+  Layer # 4-  P = 6.72 Atomic Percent = .350 Mass Percent
+  Layer # 4-  K = 4.71 Atomic Percent = .309 Mass Percent
+  Layer # 4- Cl = 4.02 Atomic Percent = .240 Mass Percent
+  Layer # 4- Na = 4.65 Atomic Percent = .179 Mass Percent
+====================================================================
+ Total Ions calculated =10000.00
+ Total Target Vacancies     = 167 /Ion
+ Total Target Displacements = 169 /Ion
+ Total Target Replacement Collisions = 2 /Ion
+================================================================
+   Table Vacancy Units are  >>>>  Number /(Angstrom-Ion)  <<<<  
+================================================================
+  DEPTH (A)      Number
+------------   -----------
+1000000.E+00   0000.000000
+2000000.E+00   0000.000000
+3000000.E+00   0000.000000
+4000000.E+00   0000.000000
+5000000.E+00   0000.000000
+6000000.E+00   0000.000000
+7000000.E+00   0000.000000
+8000000.E+00   0000.000000
+9000000.E+00   0000.000000
+1000000.E+01   0000.000000
+1100000.E+01   0000.000000
+1200000.E+01   0000.000000
+1300000.E+01   0000.000000
+1400000.E+01   0000.000000
+1500000.E+01   0000.000000
+1600000.E+01   0000.000000
+1700000.E+01   0000.000000
+1800000.E+01   0000.000000
+1900000.E+01   0000.000000
+2000000.E+01   0000.000000
+2100000.E+01   0000.000000
+2200000.E+01   0000.000000
+2300000.E+01   0000.000000
+2400000.E+01   0000.000000
+2500000.E+01   0000.000000
+2600000.E+01   0000.000000
+2700000.E+01   0000.000000
+2800000.E+01   0000.000000
+2900000.E+01   0000.000000
+3000000.E+01   0000.000000
+3100000.E+01   0000.000000
+3200000.E+01   0000.000000
+3300000.E+01   0000.000000
+3400000.E+01   0000.000000
+3500000.E+01   0000.000000
+3600000.E+01   0000.000000
+3700000.E+01   0000.000000
+3800000.E+01   0000.000000
+3900000.E+01   0000.000000
+4000000.E+01   0000.000000
+4100000.E+01   0000.000000
+4200000.E+01   0000.000000
+4300000.E+01   0000.000000
+4400000.E+01   0000.000000
+4500000.E+01   0000.000000
+4600000.E+01   0000.000000
+4700000.E+01   0000.000000
+4800000.E+01   0000.000000
+4900000.E+01   0000.000000
+5000000.E+01   0000.000000
+5100000.E+01   0000.000000
+5200000.E+01   0000.000000
+5300000.E+01   0000.000000
+5400000.E+01   0000.000000
+5500000.E+01   0000.000000
+5600000.E+01   0000.000000
+5700000.E+01   0000.000000
+5800000.E+01   0000.000000
+5900000.E+01   0000.000000
+6000000.E+01   0000.000000
+6100000.E+01   0000.000000
+6200000.E+01   0000.000000
+6300000.E+01   0000.000000
+6400000.E+01   0000.000000
+6500000.E+01   0000.000000
+6600000.E+01   0000.000000
+6700000.E+01   0000.000000
+6800000.E+01   0000.000000
+6900000.E+01   0000.000000
+7000000.E+01   0000.000000
+7100000.E+01   0000.000000
+7200000.E+01   0000.000000
+7300000.E+01   0000.000000
+7400000.E+01   0000.000000
+7500000.E+01   0000.000000
+7600000.E+01   0000.000000
+7700000.E+01   0000.000000
+7800000.E+01   0000.000000
+7900000.E+01   0000.000000
+8000000.E+01   0000.000000
+8100000.E+01   0000.000000
+8200000.E+01   0000.000000
+8300000.E+01   0000.000000
+8400000.E+01   0000.000000
+8500000.E+01   0000.000000
+8600000.E+01   0000.000000
+8700000.E+01   0000.000000
+8800000.E+01   0000.000000
+8900000.E+01   0000.000000
+9000000.E+01   0000.000000
+9100000.E+01   0000.000000
+9200000.E+01   0000.000000
+9300000.E+01   0000.000000
+9400000.E+01   0000.000000
+9500000.E+01   0000.000000
+9600000.E+01   0000.000000
+9700000.E+01   0000.000000
+9800000.E+01   0000.000000
+9900000.E+01   0000.000000
+1000000.E+02   0000.000000

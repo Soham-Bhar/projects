@@ -1,0 +1,25 @@
+# Quarto
+/.quarto/
+/_site/
+*_files/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+
+# Handoff notes: internal, references PII and co-author matters
+git_context.md
+HOW_THIS_WORKS.md
+
+# Held back: needs correct quadruple-pendulum export (current file is the triple-pendulum report)
+projects/quadruple-pendulum/report/driven-quadruple-pendulum.pdf
