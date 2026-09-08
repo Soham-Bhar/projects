@@ -28,9 +28,8 @@ page-layout: article
 Physics · Data Analytics · National University of Singapore
 :::
 
-Undergraduate reading Physics with a second major in Data Analytics, at NUS College.
-My work sits where numerical methods meet experimental physics: writing the simulation
-or the analysis pipeline, then checking it against something measured.
+Hi! I am an undergraduate student reading Physics with a second major in Data Analytics, and I am also a part of NUS College.
+I love Physics (both as a subject and as a challenge) and particularly love the applications of Physics in seemingly unrelated areas such as AI and financial markets. My current experimental work has been spread across various fields including both simulation work as well as lab-bench work.
 
 This repository is the record of that work. Every project here ships the code, the data
 it ran on, the figures it produced, and the written report.
@@ -47,15 +46,16 @@ it ran on, the figures it produced, and the written report.
 ## [1.0] Abstract {#10-abstract}
 
 
-Six laboratory experiments and three computational studies, drawn from the physics
-sequence at NUS. The emphasis throughout is on doing the numerical work by hand before
-reaching for a library, and on carrying uncertainty all the way through to the quoted
-result rather than stopping at a central value.
+Six laboratory experiments and three computational studies. The emphasis throughout is on doing the numerical work by hand before
+reaching for a library, and on meticulously handling uncertainty all the way through to the quoted final results.
 
-Two things distinguish this collection from a folder of submitted coursework. First, the
-raw data is included: spreadsheets, instrument exports, simulation input decks. Second,
+Two things distinguish this collection from a folder of submitted coursework. First, I have included some of the
+raw data. Spreadsheets, instrument exports, simulation input decks and so on. Second,
 the analysis that turned that data into each figure is included as well. A reader who
 doubts a number can follow it back to the measurement.
+That being said, I have deliberately excluded some data, scripts and results for the sake of brevity. For example, the XRD experiment alone had over 100 raw data files whereas my TRIM simulations had over 200 independent figures.
+
+Lastly, I have not included any of the work I did during my role as a research assistant intern working in thin-film skyrmionic magnetic tunnel junction characterisation at A*STAR and NUS. This is because much of my group's research is confidential, and unpublished (as is the status-quo in research groups).
 
 ::: {.spec}
 <div><span class="k">Degree</span><span class="v">B.Sc. Physics, second major in Data Analytics</span></div>
@@ -67,10 +67,10 @@ doubts a number can follow it back to the measurement.
 
 
 
-## [2.0] Applied engineering {#20-applied-engineering}
+## [2.0] Some tools used {#20-some-tools-used}
 
 
-Tools used in the work below, rather than a list of everything encountered.
+Here are some tools/languages used in the work below.
 
 [Python]{.tag} [NumPy]{.tag} [SciPy]{.tag} [Matplotlib]{.tag} [Jupyter]{.tag}
 [MATLAB]{.tag} [R]{.tag} [Typst]{.tag} [LaTeX]{.tag} [Quarto]{.tag} [Git]{.tag}
@@ -82,7 +82,7 @@ functions, Monte-Carlo binary collision simulation, Poincaré sectioning, bifurc
 mapping and Lyapunov divergence.
 
 **Experimental methods.** Resonance spectroscopy, beam profiling, Hall measurement across
-carrier types and temperature, Bragg diffraction, torsion dynamometry, and error budgets
+carrier types and temperature, Bragg diffraction, torsion dynamometry, and errors
 propagated to the quoted figure.
 
 
@@ -95,7 +95,7 @@ propagated to the quoted figure.
 ::: {.meta}
 [3.1] PC3236 Computational Methods in Physics · Python, Jupyter, Typst
 :::
-Four coupled masses with no closed-form solution, integrated with a hand-coded RK4 scheme
+Four coupled masses with no closed-form solution, numerically integrated with a hand-coded RK4 scheme
 at a fixed 1 ms step rather than a library solver, so the integration behaviour stays
 open to inspection. The 4x4 mass matrix is solved by LU decomposition at every stage.
 Validated against SciPy's adaptive RK45 and agreeing to within one microradian over a
@@ -162,14 +162,12 @@ fitting intact rather than reduced to a table of results.
 ## [6.0] Terms {#60-terms}
 
 
-Code is MIT licensed. Reports, figures and written content are CC BY-NC-ND 4.0, and every
-page of every report carries that notice. These are graded submissions published as a
+Many of these are graded submissions published as a
 portfolio: they are not a study aid, and reproducing any part of them as your own work is
 plagiarism.
 
 Read the [reuse conditions](https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md)
 before using anything here.
 
-Work from my research internship is excluded. That data and those results belong to the
-host laboratory and are not mine to publish.
+Work from my research internship is excluded. That data and those results belong to the research group and are not mine to publish.
 

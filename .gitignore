@@ -25,3 +25,8 @@ HOW_THIS_WORKS.md
 /b.css
 /cur.css
 /*.bak
+
+# RStudio
+.Rhistory
+.Rproj.user/
+*.Rproj
