@@ -3,6 +3,8 @@
 Chaotic dynamics of four coupled masses, simulated with a hand-coded integrator and validated
 against a reference solver. Submitted for **PC3236 Computational Methods in Physics**.
 
+**[Read the report (PDF)](report/driven-quadruple-pendulum.pdf)**
+
 ![Phase portraits](figures/phase_portraits.png)
 
 ## The problem
@@ -42,7 +44,7 @@ signatures of deterministic chaos.
 code/quadruple_pendulum.ipynb   simulation, analysis and figure generation
 code/report.typ                 Typst source of the report
 figures/                        generated plots
-report/                         compiled report (PDF)
+report/driven-quadruple-pendulum.pdf   compiled report
 ```
 
 ## Running it

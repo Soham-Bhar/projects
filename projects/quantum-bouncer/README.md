@@ -3,6 +3,8 @@
 Time evolution of a quantum particle bouncing in a uniform gravitational field. Submitted for
 **PC2130 Quantum Mechanics 1**.
 
+**[Read the report (PDF)](report/quantum-bouncer.pdf)**
+
 ## The problem
 
 The "quantum bouncer" is a particle in a linear gravitational potential above a hard floor. It
@@ -29,8 +31,8 @@ reassembling close to its original shape after a characteristic revival time.
 ## Contents
 
 ```
-code/quantum_bouncer.py   simulation and plotting
-report/                   compiled report (PDF)
+code/quantum_bouncer.py                simulation and plotting
+report/quantum-bouncer.pdf             compiled report
 ```
 
 ## Running it
