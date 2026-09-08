@@ -25,7 +25,7 @@ website:
         text: Experimental Physics
     right:
       - icon: github
-        href: https://github.com/USERNAME/physics-projects
+        href: https://github.com/Soham-Bhar/projects
         aria-label: GitHub
   page-footer:
     center: "Code MIT-licensed. Written content CC BY-NC-ND 4.0."

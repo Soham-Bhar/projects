@@ -1,6 +1,10 @@
-# Physics Projects
+# Projects
 
-Undergraduate computational and experimental physics work by **Soham Bhar**, B.Sc. Physics with a second major in Data Analytics at the National University of Singapore.
+Coursework and personal projects by **Soham Bhar**, B.Sc. Physics with a second major in Data
+Analytics at the National University of Singapore.
+
+Everything here is currently physics: computational simulations and laboratory work. Other
+projects will be added alongside it over time.
 
 Each project folder holds the code, the generated figures, and the written report.
 
