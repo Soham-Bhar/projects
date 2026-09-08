@@ -132,6 +132,22 @@ thead th {
   border-bottom: 2px solid $clay-500 !important;
 }
 
+// The report tables have four columns of prose, which squeezes the first
+// column hard enough to break "Experiment A" mid-word. Keep that column and
+// the header intact, and let the table scroll sideways when space runs out.
+.quarto-container table,
+main table {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+main table td:first-child,
+main table th:first-child {
+  white-space: nowrap;
+}
+
 tbody tr:hover { background: rgba(217, 149, 79, 0.05); }
 
 div.sourceCode {
