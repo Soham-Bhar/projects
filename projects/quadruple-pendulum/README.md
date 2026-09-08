@@ -42,10 +42,8 @@ signatures of deterministic chaos.
 code/quadruple_pendulum.ipynb   simulation, analysis and figure generation
 code/report.typ                 Typst source of the report
 figures/                        generated plots
+report/                         compiled report (PDF)
 ```
-
-The compiled report is not published yet. It will be added here once the final version is
-exported.
 
 ## Running it
 
