@@ -14,7 +14,7 @@ Each project folder holds the code, the generated figures, and the written repor
 
 | Project | What it is | Contents |
 |---|---|---|
-| [Driven Quadruple Pendulum](projects/quadruple-pendulum) | Chaotic dynamics of four coupled masses, integrated with a hand-coded RK4 scheme and validated against SciPy | Notebook, Typst source, 7 figures |
+| [Driven Quadruple Pendulum](projects/quadruple-pendulum) | Chaotic dynamics of four coupled masses, integrated with a hand-coded RK4 scheme and validated against SciPy | Notebook, Typst source, 7 figures, report |
 | [Quantum Bouncer](projects/quantum-bouncer) | Time evolution of a quantum particle in a gravitational potential, including quantum revivals | Python simulation, report |
 | [Experimental Physics](projects/experimental-physics) | Five experiments from PC2193 and one simulation study from PC3193: electron spin resonance, Gaussian beam optics, the Hall effect in germanium, X-ray diffraction, magnetic moments, and ion-matter interaction in SRIM | 6 reports, raw data, analysis workbooks, scripts, figures |
 
@@ -24,7 +24,7 @@ Each project folder holds the code, the generated figures, and the written repor
 
 ```
 projects/
-  quadruple-pendulum/     code/ figures/
+  quadruple-pendulum/     code/ figures/ report/
   quantum-bouncer/        code/ report/
   experimental-physics/   reports_data_figures/<experiment>/
 ```
