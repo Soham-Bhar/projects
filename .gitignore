@@ -20,3 +20,8 @@ Thumbs.db
 # Handoff notes: internal, references PII and co-author matters
 git_context.md
 HOW_THIS_WORKS.md
+
+# stray downloads from ad-hoc checks
+/b.css
+/cur.css
+/*.bak
