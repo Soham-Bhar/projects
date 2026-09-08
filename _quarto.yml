@@ -32,6 +32,6 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: [darkly, rustic-dark.scss]
     toc: true
     css: styles.css

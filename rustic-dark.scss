@@ -1,0 +1,141 @@
+/*-- scss:defaults --*/
+
+// ── Rustic dark palette ───────────────────────────────────────────────────────
+// Aged wood and ember: warm browns rather than neutral greys, so the dark
+// background reads as timber and lamplight instead of slate.
+
+$umber-950:       #16110d;   // deepest, navbar and footer
+$umber-900:       #1d1712;   // page background
+$umber-850:       #241d16;   // raised surfaces, inline code
+$umber-800:       #2d241b;   // wells
+$umber-700:       #3d3124;   // borders
+
+$clay-500:        #b8663f;   // terracotta, the primary accent
+$clay-400:        #cc7a4f;
+$ember-400:       #d9954f;   // ochre lamplight, links
+$sage-400:        #8a9a7b;   // muted green, for contrast
+
+$parchment:       #ece2d4;   // body text
+$parchment-muted: #b0a190;   // captions, footer, table of contents
+
+// ── Bootstrap ─────────────────────────────────────────────────────────────────
+$body-bg:    $umber-900;
+$body-color: $parchment;
+
+$primary:    $clay-500;
+$secondary:  $ember-400;
+$success:    $sage-400;
+$info:       $ember-400;
+$warning:    $ember-400;
+$danger:     #c05a4a;
+$light:      $umber-800;
+$dark:       $umber-950;
+
+$link-color:       $ember-400;
+$link-hover-color: #e9ae70;
+$link-decoration:  none;
+
+$font-family-sans-serif: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", serif;
+$font-family-monospace:  "Cascadia Code", "JetBrains Mono", Consolas, Menlo, monospace;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 600;
+$headings-color:       $parchment;
+
+$border-color:      $umber-700;
+$card-bg:           $umber-850;
+$card-border-color: $umber-700;
+
+$code-color:      $ember-400;
+$code-bg:         $umber-850;
+$code-block-bg:   $umber-950;
+
+$table-border-color: $umber-700;
+
+// ── Quarto chrome ─────────────────────────────────────────────────────────────
+$navbar-bg: $umber-950;
+$navbar-fg: $parchment;
+$navbar-hl: $ember-400;
+
+$footer-bg: $umber-950;
+$footer-fg: $parchment-muted;
+
+$toc-color:     $parchment-muted;
+$toc-font-size: 0.85rem;
+
+
+/*-- scss:rules --*/
+
+// A faint warmth from the top corners, as though lit from off-page.
+body {
+  background-image:
+    radial-gradient(ellipse at 12% -12%, rgba(184, 102, 63, 0.10), transparent 55%),
+    radial-gradient(ellipse at 88% -6%, rgba(217, 149, 79, 0.07), transparent 48%);
+  background-attachment: fixed;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4 { letter-spacing: -0.01em; }
+
+h1 {
+  border-bottom: 1px solid $umber-700;
+  padding-bottom: 0.45rem;
+}
+
+h2 { margin-top: 2.25rem; }
+
+a { text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+
+.navbar {
+  border-bottom: 1px solid $umber-700;
+}
+
+.navbar-brand {
+  font-family: $font-family-serif;
+  font-weight: 700;
+}
+
+// Matplotlib figures have white backgrounds. Left bare they glare against the
+// dark page, so mount them like prints instead of fighting it.
+.quarto-figure img,
+p > img {
+  background: #f2ece2;
+  padding: 0.6rem;
+  border: 1px solid $umber-700;
+  border-radius: 3px;
+}
+
+figcaption,
+.figure-caption { color: $parchment-muted; }
+
+blockquote {
+  border-left: 3px solid $clay-500;
+  background: rgba(184, 102, 63, 0.07);
+  padding: 0.8rem 1rem;
+  color: $parchment-muted;
+}
+
+thead th {
+  font-family: $font-family-serif;
+  border-bottom: 2px solid $clay-500 !important;
+}
+
+tbody tr:hover { background: rgba(217, 149, 79, 0.05); }
+
+div.sourceCode {
+  border: 1px solid $umber-800;
+  border-radius: 4px;
+}
+
+.page-footer {
+  border-top: 1px solid $umber-700;
+}
+
+// Links to PDFs and reports read as actions rather than prose.
+.lead a,
+strong > a {
+  color: $clay-400;
+  font-weight: 600;
+}
