@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ecf344317f327f851264e1037ae5e1b5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4ca007f3a6d79a87bb5058a75c5b479d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-739c3afdf3b0d1ec44932ff8637ce993.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,6 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap">
+<script>document.documentElement.className += " has-js";</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -139,7 +140,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#10-abstract" id="toc-10-abstract" class="nav-link active" data-scroll-target="#10-abstract">[1.0] Abstract</a></li>
   <li><a href="#20-applied-engineering" id="toc-20-applied-engineering" class="nav-link" data-scroll-target="#20-applied-engineering">[2.0] Applied engineering</a></li>
-  <li><a href="#30-selected-work" id="toc-30-selected-work" class="nav-link" data-scroll-target="#30-selected-work">[3.0] Selected work</a></li>
+  <li><a href="#30-selected-work" id="toc-30-selected-work" class="nav-link" data-scroll-target="#30-selected-work">[3.0] Selected work</a>
+  <ul class="collapse">
+  <li><a href="#driven-quadruple-pendulum" id="toc-driven-quadruple-pendulum" class="nav-link" data-scroll-target="#driven-quadruple-pendulum">Driven Quadruple Pendulum</a></li>
+  <li><a href="#quantum-bouncer" id="toc-quantum-bouncer" class="nav-link" data-scroll-target="#quantum-bouncer">Quantum Bouncer</a></li>
+  <li><a href="#interaction-of-ions-with-matter" id="toc-interaction-of-ions-with-matter" class="nav-link" data-scroll-target="#interaction-of-ions-with-matter">Interaction of Ions with Matter</a></li>
+  </ul></li>
   <li><a href="#40-laboratory-record" id="toc-40-laboratory-record" class="nav-link" data-scroll-target="#40-laboratory-record">[4.0] Laboratory record</a></li>
   <li><a href="#50-reproducibility" id="toc-50-reproducibility" class="nav-link" data-scroll-target="#50-reproducibility">[5.0] Reproducibility</a></li>
   <li><a href="#60-terms" id="toc-60-terms" class="nav-link" data-scroll-target="#60-terms">[6.0] Terms</a></li>
@@ -170,7 +176,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="10-abstract" class="level2">
 <h2 class="anchored" data-anchor-id="10-abstract">[1.0] Abstract</h2>
-<div class="reveal">
 <p>Six laboratory experiments and three computational studies, drawn from the physics sequence at NUS. The emphasis throughout is on doing the numerical work by hand before reaching for a library, and on carrying uncertainty all the way through to the quoted result rather than stopping at a central value.</p>
 <p>Two things distinguish this collection from a folder of submitted coursework. First, the raw data is included: spreadsheets, instrument exports, simulation input decks. Second, the analysis that turned that data into each figure is included as well. A reader who doubts a number can follow it back to the measurement.</p>
 <div class="spec">
@@ -190,20 +195,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="k">Repository</span><span class="v">384 files, MIT for code, CC BY-NC-ND for writing</span>
 </div>
 </div>
-</div>
 </section>
 <section id="20-applied-engineering" class="level2">
 <h2 class="anchored" data-anchor-id="20-applied-engineering">[2.0] Applied engineering</h2>
-<div class="reveal">
 <p>Tools used in the work below, rather than a list of everything encountered.</p>
 <p><span class="tag">Python</span> <span class="tag">NumPy</span> <span class="tag">SciPy</span> <span class="tag">Matplotlib</span> <span class="tag">Jupyter</span> <span class="tag">MATLAB</span> <span class="tag">R</span> <span class="tag">Typst</span> <span class="tag">LaTeX</span> <span class="tag">Quarto</span> <span class="tag">Git</span> <span class="tag">SRIM / TRIM</span> <span class="tag">Excel</span></p>
 <p><strong>Numerical methods.</strong> Fourth-order Runge-Kutta written from scratch, LU decomposition of a configuration-dependent mass matrix, eigenbasis decomposition against Airy functions, Monte-Carlo binary collision simulation, Poincaré sectioning, bifurcation mapping and Lyapunov divergence.</p>
 <p><strong>Experimental methods.</strong> Resonance spectroscopy, beam profiling, Hall measurement across carrier types and temperature, Bragg diffraction, torsion dynamometry, and error budgets propagated to the quoted figure.</p>
-</div>
 </section>
 <section id="30-selected-work" class="level2">
 <h2 class="anchored" data-anchor-id="30-selected-work">[3.0] Selected work</h2>
-<div class="reveal">
 <section id="driven-quadruple-pendulum" class="level3 entry">
 <h3 class="anchored" data-anchor-id="driven-quadruple-pendulum"><a href="./projects/quadruple-pendulum/index.html">Driven Quadruple Pendulum</a></h3>
 <div class="meta">
@@ -225,11 +226,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Twenty-five Monte-Carlo binary collision simulations of ion implantation, covering hydrogen, boron, argon and gold into beryllium, silicon and gallium arsenide across six orders of magnitude in energy. Ion ranges, damage profiles and sputtering yields extracted by scripted analysis. Every <code>TRIM.IN</code> input deck is published, so any figure in the report can be regenerated from scratch.</p>
 </section>
-</div>
 </section>
 <section id="40-laboratory-record" class="level2">
 <h2 class="anchored" data-anchor-id="40-laboratory-record">[4.0] Laboratory record</h2>
-<div class="reveal">
 <p>Five bench experiments from PC2193, each published with its raw data and the workbooks the analysis was carried out in.</p>
 <table class="caption-top table">
 <thead>
@@ -267,22 +266,17 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-</div>
 </section>
 <section id="50-reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="50-reproducibility">[5.0] Reproducibility</h2>
-<div class="reveal">
 <p>Fourteen CSV runs sit behind the Hall effect report, including zero-field and zero-current controls. Four workbooks sit behind the X-ray diffraction analysis. Forty simulation input decks sit behind the SRIM study. The bulk per-ion collision dumps are not published, since SRIM regenerates them from the decks, but everything needed to do so is here.</p>
 <p>Where the analysis was carried out in Excel, the workbook is published with its plots and fitting intact rather than reduced to a table of results.</p>
-</div>
 </section>
 <section id="60-terms" class="level2">
 <h2 class="anchored" data-anchor-id="60-terms">[6.0] Terms</h2>
-<div class="reveal">
 <p>Code is MIT licensed. Reports, figures and written content are CC BY-NC-ND 4.0, and every page of every report carries that notice. These are graded submissions published as a portfolio: they are not a study aid, and reproducing any part of them as your own work is plagiarism.</p>
 <p>Read the <a href="https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md">reuse conditions</a> before using anything here.</p>
 <p>Work from my research internship is excluded. That data and those results belong to the host laboratory and are not mine to publish.</p>
-</div>
 
 
 </section>
@@ -710,7 +704,7 @@ ul.task-list li input[type="checkbox"] {
   var reduce = window.matchMedia &&
                window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var targets = document.querySelectorAll('main h2, .reveal');
+  var targets = document.querySelectorAll('main h2, .entry');
   if (!targets.length) return;
 
   // No IntersectionObserver, or motion declined: show everything immediately.
