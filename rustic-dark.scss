@@ -67,13 +67,23 @@ $toc-font-size: 0.85rem;
 
 /*-- scss:rules --*/
 
-// A faint warmth from the top corners, as though lit from off-page.
+// A faint warmth from the top corners, as though lit from off-page. Painted on
+// a fixed pseudo-element rather than with background-attachment, which janks on
+// scroll and is unreliable on iOS Safari.
 body {
-  background-image:
+  line-height: 1.65;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
     radial-gradient(ellipse at 12% -12%, rgba(184, 102, 63, 0.10), transparent 55%),
     radial-gradient(ellipse at 88% -6%, rgba(217, 149, 79, 0.07), transparent 48%);
-  background-attachment: fixed;
-  line-height: 1.65;
 }
 
 h1, h2, h3, h4 { letter-spacing: -0.01em; }
