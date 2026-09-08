@@ -81,14 +81,49 @@
     "href": "index.html",
     "title": "Soham Bhar",
     "section": "",
-    "text": "I am an undergraduate reading Physics with a second major in Data Analytics at NUS. My work sits where numerical methods meet experimental physics: writing the simulation or the analysis pipeline, and then checking it against something measured.\nThis site collects my coursework projects. Each one includes the code, the figures it generated, and the written report."
+    "text": "Physics · Data Analytics · National University of Singapore\n\nUndergraduate reading Physics with a second major in Data Analytics, at NUS College. My work sits where numerical methods meet experimental physics: writing the simulation or the analysis pipeline, then checking it against something measured.\nThis repository is the record of that work. Every project here ships the code, the data it ran on, the figures it produced, and the written report.\n\nRepository Reuse conditions Selected work"
   },
   {
-    "objectID": "index.html#projects",
-    "href": "index.html#projects",
+    "objectID": "index.html#10-abstract",
+    "href": "index.html#10-abstract",
     "title": "Soham Bhar",
-    "section": "Projects",
-    "text": "Projects\n\nDriven Quadruple Pendulum\nChaotic dynamics of four coupled masses. A hand-coded RK4 integrator, validated against SciPy’s adaptive solver, then characterised with Poincaré sections, bifurcation diagrams and Lyapunov divergence.\n\n\nQuantum Bouncer\nA quantum particle in a gravitational potential, propagated exactly on an Airy-function eigenbasis, showing wave-packet spreading and quantum revivals.\n\n\nExperimental Physics\nFour laboratory experiments: electron spin resonance, Gaussian beam optics, the Hall effect in germanium, and X-ray diffraction of crystals.\n\nSource for everything here is on GitHub. Please read the reuse conditions before using any of it."
+    "section": "[1.0] Abstract",
+    "text": "[1.0] Abstract\n\nSix laboratory experiments and three computational studies, drawn from the physics sequence at NUS. The emphasis throughout is on doing the numerical work by hand before reaching for a library, and on carrying uncertainty all the way through to the quoted result rather than stopping at a central value.\nTwo things distinguish this collection from a folder of submitted coursework. First, the raw data is included: spreadsheets, instrument exports, simulation input decks. Second, the analysis that turned that data into each figure is included as well. A reader who doubts a number can follow it back to the measurement.\n\n\nDegreeB.Sc. Physics, second major in Data Analytics\n\n\nInstitutionNational University of Singapore, NUS College\n\n\nExpectedMay 2028\n\n\nReports8 documents, 129 pages\n\n\nRepository384 files, MIT for code, CC BY-NC-ND for writing"
+  },
+  {
+    "objectID": "index.html#20-applied-engineering",
+    "href": "index.html#20-applied-engineering",
+    "title": "Soham Bhar",
+    "section": "[2.0] Applied engineering",
+    "text": "[2.0] Applied engineering\n\nTools used in the work below, rather than a list of everything encountered.\nPython NumPy SciPy Matplotlib Jupyter MATLAB R Typst LaTeX Quarto Git SRIM / TRIM Excel\nNumerical methods. Fourth-order Runge-Kutta written from scratch, LU decomposition of a configuration-dependent mass matrix, eigenbasis decomposition against Airy functions, Monte-Carlo binary collision simulation, Poincaré sectioning, bifurcation mapping and Lyapunov divergence.\nExperimental methods. Resonance spectroscopy, beam profiling, Hall measurement across carrier types and temperature, Bragg diffraction, torsion dynamometry, and error budgets propagated to the quoted figure."
+  },
+  {
+    "objectID": "index.html#30-selected-work",
+    "href": "index.html#30-selected-work",
+    "title": "Soham Bhar",
+    "section": "[3.0] Selected work",
+    "text": "[3.0] Selected work\n\n\nDriven Quadruple Pendulum\n\n[3.1] PC3236 Computational Methods in Physics · Python, Jupyter, Typst\n\nFour coupled masses with no closed-form solution, integrated with a hand-coded RK4 scheme at a fixed 1 ms step rather than a library solver, so the integration behaviour stays open to inspection. The 4x4 mass matrix is solved by LU decomposition at every stage. Validated against SciPy’s adaptive RK45 and agreeing to within one microradian over a 20 s trajectory, then characterised through Poincaré sections, bifurcation diagrams and Lyapunov divergence.\n\n\nQuantum Bouncer\n\n[3.2] PC2130 Quantum Mechanics 1 · Python\n\nA particle in a linear gravitational potential above a hard floor, one of the few systems with an exact solution in Airy functions. Energy eigenvalues taken from the zeros of the Airy function, a Gaussian packet decomposed onto that eigenbasis, and time evolution by resumming phase factors, so the propagation is exact rather than a finite-difference approximation. The packet spreads, decoheres into an interference pattern with no classical analogue, and later reassembles as a quantum revival.\n\n\nInteraction of Ions with Matter\n\n[3.3] PC3193 Experimental Physics II · SRIM, Python\n\nTwenty-five Monte-Carlo binary collision simulations of ion implantation, covering hydrogen, boron, argon and gold into beryllium, silicon and gallium arsenide across six orders of magnitude in energy. Ion ranges, damage profiles and sputtering yields extracted by scripted analysis. Every TRIM.IN input deck is published, so any figure in the report can be regenerated from scratch."
+  },
+  {
+    "objectID": "index.html#40-laboratory-record",
+    "href": "index.html#40-laboratory-record",
+    "title": "Soham Bhar",
+    "section": "[4.0] Laboratory record",
+    "text": "[4.0] Laboratory record\n\nFive bench experiments from PC2193, each published with its raw data and the workbooks the analysis was carried out in.\n\n\n\nRef\nExperiment\nMeasured quantity\n\n\n\n\n[4.1]\nElectron Spin Resonance\ng-factor of a free radical by resonant microwave absorption\n\n\n[4.2]\nGaussian Beam Optics\nBeam waist, Rayleigh range and beam quality factor\n\n\n[4.3]\nHall Effect in Germanium\nCarrier concentration and mobility, n-type and p-type\n\n\n[4.4]\nX-Ray Diffraction\nLattice constants of LiF and KBr, and Planck’s constant\n\n\n[4.5]\nMagnetic Moments\nTorque in a Helmholtz field against five variables"
+  },
+  {
+    "objectID": "index.html#50-reproducibility",
+    "href": "index.html#50-reproducibility",
+    "title": "Soham Bhar",
+    "section": "[5.0] Reproducibility",
+    "text": "[5.0] Reproducibility\n\nFourteen CSV runs sit behind the Hall effect report, including zero-field and zero-current controls. Four workbooks sit behind the X-ray diffraction analysis. Forty simulation input decks sit behind the SRIM study. The bulk per-ion collision dumps are not published, since SRIM regenerates them from the decks, but everything needed to do so is here.\nWhere the analysis was carried out in Excel, the workbook is published with its plots and fitting intact rather than reduced to a table of results."
+  },
+  {
+    "objectID": "index.html#60-terms",
+    "href": "index.html#60-terms",
+    "title": "Soham Bhar",
+    "section": "[6.0] Terms",
+    "text": "[6.0] Terms\n\nCode is MIT licensed. Reports, figures and written content are CC BY-NC-ND 4.0, and every page of every report carries that notice. These are graded submissions published as a portfolio: they are not a study aid, and reproducing any part of them as your own work is plagiarism.\nRead the reuse conditions before using anything here.\nWork from my research internship is excluded. That data and those results belong to the host laboratory and are not mine to publish."
   },
   {
     "objectID": "projects/quadruple-pendulum/index.html",

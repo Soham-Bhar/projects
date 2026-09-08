@@ -42,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-66e1cb67f2d93782b26b11f2c01b1d3b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ecf344317f327f851264e1037ae5e1b5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-eeee46d09cada55e2179cf61b05bf22b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-4ca007f3a6d79a87bb5058a75c5b479d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,6 +73,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -653,6 +656,35 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>
+// Reveal-on-scroll, kept mechanical: a rule laid down, an entry settling once.
+// Everything here is progressive. With JS off, or with reduced motion asked for,
+// the page renders complete and static.
+(function () {
+  var reduce = window.matchMedia &&
+               window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var targets = document.querySelectorAll('main h2, .reveal');
+  if (!targets.length) return;
+
+  // No IntersectionObserver, or motion declined: show everything immediately.
+  if (reduce || !('IntersectionObserver' in window)) {
+    targets.forEach(function (el) { el.classList.add('is-in'); });
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('is-in');
+      io.unobserve(e.target);          // once only, never on the way back up
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+  targets.forEach(function (el) { io.observe(el); });
+})();
+
+</script>
 
 
 
