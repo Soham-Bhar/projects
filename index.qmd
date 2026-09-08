@@ -27,6 +27,6 @@ germanium, and X-ray diffraction of crystals.
 
 ---
 
-Source for everything here is on [GitHub](https://github.com/USERNAME/physics-projects).
-Please read the [reuse conditions](https://github.com/USERNAME/physics-projects/blob/main/DISCLAIMER.md)
+Source for everything here is on [GitHub](https://github.com/Soham-Bhar/projects).
+Please read the [reuse conditions](https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md)
 before using any of it.
