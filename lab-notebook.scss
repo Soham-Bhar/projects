@@ -406,8 +406,8 @@ nav[role="doc-toc"] ul > li > a.active { color: $copper-dark; font-weight: 700; 
 
 // ── Motion ───────────────────────────────────────────────────────────────────
 // Mechanical rather than eased: a rule laid down, a card settling once.
-// Everything is gated on .has-js, which is set by an inline script in the head.
-// Without JavaScript nothing is hidden, so the page reads complete either way.
+// The hidden state is applied by the observer script itself, so without
+// JavaScript nothing is ever hidden and the page reads complete.
 // Body prose is never animated; only the section rule and the specimen cards.
 
 main h2::after {
@@ -431,12 +431,15 @@ main h2::after {
     to   { transform: scaleX(1); }
   }
 
-  .has-js .entry {
+  // .pending is applied by the observer script itself, so the hidden state
+  // only ever exists when JavaScript is running to undo it. Quarto reassigns
+  // documentElement.className during boot, so a class on <html> is not safe.
+  .entry.pending {
     opacity: 0;
     transform: translateY(5px);
   }
 
-  .has-js .entry.is-in { animation: settle 300ms linear forwards; }
+  .entry.pending.is-in { animation: settle 300ms linear forwards; }
 
   @keyframes settle {
     to { opacity: 1; transform: none; }
