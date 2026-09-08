@@ -1,32 +1,187 @@
 ---
-title: "Soham Bhar"
-subtitle: "Physics and Data Analytics, National University of Singapore"
+title: ""
+toc: true
+toc-title: "Contents"
+page-layout: article
 ---
 
-I am an undergraduate reading Physics with a second major in Data Analytics at NUS. My work
-sits where numerical methods meet experimental physics: writing the simulation or the analysis
-pipeline, and then checking it against something measured.
+::: {.hero}
 
-This site collects my coursework projects. Each one includes the code, the figures it
-generated, and the written report.
+<svg class="hero-motif" viewBox="0 0 800 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="#23201c" stroke-width="1" opacity="0.13">
+    <path d="M400 78 C 326 78 305 108 305 130 C 305 152 326 182 400 182 C 474 182 495 152 495 130 C 495 108 474 78 400 78 Z"/>
+    <path d="M400 52 C 283 52 250 98 250 130 C 250 162 283 208 400 208 C 517 208 550 162 550 130 C 550 98 517 52 400 52 Z"/>
+    <path d="M400 28 C 232 28 185 89 185 130 C 185 171 232 232 400 232 C 568 232 615 171 615 130 C 615 89 568 28 400 28 Z"/>
+    <path d="M400 4 C 174 4 110 80 110 130 C 110 180 174 256 400 256 C 626 256 690 180 690 130 C 690 80 626 4 400 4 Z"/>
+    <path d="M400 -22 C 112 -22 30 71 30 130 C 30 189 112 282 400 282 C 688 282 770 189 770 130 C 770 71 688 -22 400 -22 Z"/>
+  </g>
+  <g fill="none" stroke="#4a7c6f" stroke-width="1.4" opacity="0.3">
+    <line x1="400" y1="96" x2="400" y2="164"/>
+    <circle cx="400" cy="96" r="3.2"/>
+    <circle cx="400" cy="164" r="3.2"/>
+  </g>
+</svg>
 
-## Projects
+# Soham Bhar
 
+::: {.role}
+Physics · Data Analytics · National University of Singapore
+:::
+
+Undergraduate reading Physics with a second major in Data Analytics, at NUS College.
+My work sits where numerical methods meet experimental physics: writing the simulation
+or the analysis pipeline, then checking it against something measured.
+
+This repository is the record of that work. Every project here ships the code, the data
+it ran on, the figures it produced, and the written report.
+
+::: {.hero-links}
+[Repository](https://github.com/Soham-Bhar/projects)
+[Reuse conditions](https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md)
+[Selected work](#30-selected-work)
+:::
+
+:::
+
+
+## [1.0] Abstract {#10-abstract}
+
+::: {.reveal}
+
+Six laboratory experiments and three computational studies, drawn from the physics
+sequence at NUS. The emphasis throughout is on doing the numerical work by hand before
+reaching for a library, and on carrying uncertainty all the way through to the quoted
+result rather than stopping at a central value.
+
+Two things distinguish this collection from a folder of submitted coursework. First, the
+raw data is included: spreadsheets, instrument exports, simulation input decks. Second,
+the analysis that turned that data into each figure is included as well. A reader who
+doubts a number can follow it back to the measurement.
+
+::: {.spec}
+<div><span class="k">Degree</span><span class="v">B.Sc. Physics, second major in Data Analytics</span></div>
+<div><span class="k">Institution</span><span class="v">National University of Singapore, NUS College</span></div>
+<div><span class="k">Expected</span><span class="v">May 2028</span></div>
+<div><span class="k">Reports</span><span class="v">8 documents, 129 pages</span></div>
+<div><span class="k">Repository</span><span class="v">384 files, MIT for code, CC BY-NC-ND for writing</span></div>
+:::
+
+:::
+
+
+## [2.0] Applied engineering {#20-applied-engineering}
+
+::: {.reveal}
+
+Tools used in the work below, rather than a list of everything encountered.
+
+[Python]{.tag} [NumPy]{.tag} [SciPy]{.tag} [Matplotlib]{.tag} [Jupyter]{.tag}
+[MATLAB]{.tag} [R]{.tag} [Typst]{.tag} [LaTeX]{.tag} [Quarto]{.tag} [Git]{.tag}
+[SRIM / TRIM]{.tag} [Excel]{.tag}
+
+**Numerical methods.** Fourth-order Runge-Kutta written from scratch, LU decomposition
+of a configuration-dependent mass matrix, eigenbasis decomposition against Airy
+functions, Monte-Carlo binary collision simulation, Poincaré sectioning, bifurcation
+mapping and Lyapunov divergence.
+
+**Experimental methods.** Resonance spectroscopy, beam profiling, Hall measurement across
+carrier types and temperature, Bragg diffraction, torsion dynamometry, and error budgets
+propagated to the quoted figure.
+
+:::
+
+
+## [3.0] Selected work {#30-selected-work}
+
+::: {.reveal}
+
+::: {.entry}
 ### [Driven Quadruple Pendulum](projects/quadruple-pendulum/index.qmd)
-Chaotic dynamics of four coupled masses. A hand-coded RK4 integrator, validated against SciPy's
-adaptive solver, then characterised with Poincaré sections, bifurcation diagrams and Lyapunov
-divergence.
+::: {.meta}
+[3.1] PC3236 Computational Methods in Physics · Python, Jupyter, Typst
+:::
+Four coupled masses with no closed-form solution, integrated with a hand-coded RK4 scheme
+at a fixed 1 ms step rather than a library solver, so the integration behaviour stays
+open to inspection. The 4x4 mass matrix is solved by LU decomposition at every stage.
+Validated against SciPy's adaptive RK45 and agreeing to within one microradian over a
+20 s trajectory, then characterised through Poincaré sections, bifurcation diagrams and
+Lyapunov divergence.
+:::
 
+::: {.entry}
 ### [Quantum Bouncer](projects/quantum-bouncer/index.qmd)
-A quantum particle in a gravitational potential, propagated exactly on an Airy-function
-eigenbasis, showing wave-packet spreading and quantum revivals.
+::: {.meta}
+[3.2] PC2130 Quantum Mechanics 1 · Python
+:::
+A particle in a linear gravitational potential above a hard floor, one of the few systems
+with an exact solution in Airy functions. Energy eigenvalues taken from the zeros of the
+Airy function, a Gaussian packet decomposed onto that eigenbasis, and time evolution by
+resumming phase factors, so the propagation is exact rather than a finite-difference
+approximation. The packet spreads, decoheres into an interference pattern with no
+classical analogue, and later reassembles as a quantum revival.
+:::
 
-### [Experimental Physics](projects/experimental-physics/index.qmd)
-Four laboratory experiments: electron spin resonance, Gaussian beam optics, the Hall effect in
-germanium, and X-ray diffraction of crystals.
+::: {.entry}
+### [Interaction of Ions with Matter](projects/experimental-physics/index.qmd)
+::: {.meta}
+[3.3] PC3193 Experimental Physics II · SRIM, Python
+:::
+Twenty-five Monte-Carlo binary collision simulations of ion implantation, covering
+hydrogen, boron, argon and gold into beryllium, silicon and gallium arsenide across six
+orders of magnitude in energy. Ion ranges, damage profiles and sputtering yields extracted
+by scripted analysis. Every `TRIM.IN` input deck is published, so any figure in the report
+can be regenerated from scratch.
+:::
 
----
+:::
 
-Source for everything here is on [GitHub](https://github.com/Soham-Bhar/projects).
-Please read the [reuse conditions](https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md)
-before using any of it.
+
+## [4.0] Laboratory record {#40-laboratory-record}
+
+::: {.reveal}
+
+Five bench experiments from PC2193, each published with its raw data and the workbooks the
+analysis was carried out in.
+
+| Ref | Experiment | Measured quantity |
+|---|---|---|
+| [4.1] | [Electron Spin Resonance](projects/experimental-physics/index.qmd) | g-factor of a free radical by resonant microwave absorption |
+| [4.2] | [Gaussian Beam Optics](projects/experimental-physics/index.qmd) | Beam waist, Rayleigh range and beam quality factor |
+| [4.3] | [Hall Effect in Germanium](projects/experimental-physics/index.qmd) | Carrier concentration and mobility, n-type and p-type |
+| [4.4] | [X-Ray Diffraction](projects/experimental-physics/index.qmd) | Lattice constants of LiF and KBr, and Planck's constant |
+| [4.5] | [Magnetic Moments](projects/experimental-physics/index.qmd) | Torque in a Helmholtz field against five variables |
+
+:::
+
+
+## [5.0] Reproducibility {#50-reproducibility}
+
+::: {.reveal}
+
+Fourteen CSV runs sit behind the Hall effect report, including zero-field and zero-current
+controls. Four workbooks sit behind the X-ray diffraction analysis. Forty simulation input
+decks sit behind the SRIM study. The bulk per-ion collision dumps are not published, since
+SRIM regenerates them from the decks, but everything needed to do so is here.
+
+Where the analysis was carried out in Excel, the workbook is published with its plots and
+fitting intact rather than reduced to a table of results.
+
+:::
+
+
+## [6.0] Terms {#60-terms}
+
+::: {.reveal}
+
+Code is MIT licensed. Reports, figures and written content are CC BY-NC-ND 4.0, and every
+page of every report carries that notice. These are graded submissions published as a
+portfolio: they are not a study aid, and reproducing any part of them as your own work is
+plagiarism.
+
+Read the [reuse conditions](https://github.com/Soham-Bhar/projects/blob/main/DISCLAIMER.md)
+before using anything here.
+
+Work from my research internship is excluded. That data and those results belong to the
+host laboratory and are not mine to publish.
+
+:::

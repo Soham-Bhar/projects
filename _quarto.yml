@@ -32,6 +32,42 @@ website:
 
 format:
   html:
-    theme: [darkly, rustic-dark.scss]
+    theme: lab-notebook.scss
     toc: true
     css: styles.css
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap">
+    include-after-body:
+      - text: |
+          <script>
+          // Reveal-on-scroll, kept mechanical: a rule laid down, an entry settling once.
+          // Everything here is progressive. With JS off, or with reduced motion asked for,
+          // the page renders complete and static.
+          (function () {
+            var reduce = window.matchMedia &&
+                         window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            var targets = document.querySelectorAll('main h2, .reveal');
+            if (!targets.length) return;
+
+            // No IntersectionObserver, or motion declined: show everything immediately.
+            if (reduce || !('IntersectionObserver' in window)) {
+              targets.forEach(function (el) { el.classList.add('is-in'); });
+              return;
+            }
+
+            var io = new IntersectionObserver(function (entries) {
+              entries.forEach(function (e) {
+                if (!e.isIntersecting) return;
+                e.target.classList.add('is-in');
+                io.unobserve(e.target);          // once only, never on the way back up
+              });
+            }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+            targets.forEach(function (el) { io.observe(el); });
+          })();
+
+          </script>

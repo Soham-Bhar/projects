@@ -1,3 +1,2 @@
-/* Small overrides on top of rustic-dark.scss. Theming lives in the SCSS file. */
+/* Small overrides. Theming lives in lab-notebook.scss. */
 img { max-width: 100%; height: auto; }
-table { font-size: 0.95rem; }
