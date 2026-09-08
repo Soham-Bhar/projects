@@ -1,0 +1,4 @@
+/* Site styling. Kept minimal so the Quarto theme does the heavy lifting. */
+.navbar-brand { font-weight: 600; }
+img { max-width: 100%; height: auto; }
+table { font-size: 0.95rem; }
