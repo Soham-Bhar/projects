@@ -405,39 +405,38 @@ nav[role="doc-toc"] ul > li > a.active { color: $copper-dark; font-weight: 700; 
 .spec .v { color: $ink; }
 
 // ── Motion ───────────────────────────────────────────────────────────────────
-// Mechanical rather than eased. A rule laid down, an entry settling once.
+// Mechanical rather than eased: a rule laid down, a card settling once.
+// Everything is gated on .has-js, which is set by an inline script in the head.
+// Without JavaScript nothing is hidden, so the page reads complete either way.
+// Body prose is never animated; only the section rule and the specimen cards.
+
+main h2::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: $copper;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
 
-  main h2::after {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: 0;
-    height: 1px;
-    width: 100%;
-    background: $copper;
-    transform: scaleX(0);
-    transform-origin: left center;
-  }
-
-  main h2.is-in::after {
-    animation: rule-draw 520ms linear forwards;
-  }
+  main h2.is-in::after { animation: rule-draw 520ms linear forwards; }
 
   @keyframes rule-draw {
     from { transform: scaleX(0); }
     to   { transform: scaleX(1); }
   }
 
-  .reveal {
+  .has-js .entry {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(5px);
   }
 
-  .reveal.is-in {
-    animation: settle 340ms linear forwards;
-  }
+  .has-js .entry.is-in { animation: settle 300ms linear forwards; }
 
   @keyframes settle {
     to { opacity: 1; transform: none; }
@@ -445,7 +444,8 @@ nav[role="doc-toc"] ul > li > a.active { color: $copper-dark; font-weight: 700; 
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; }
+  main h2.is-in::after { transform: scaleX(1); }
+  .entry { opacity: 1; transform: none; }
 }
 
 // ── Narrow screens ───────────────────────────────────────────────────────────

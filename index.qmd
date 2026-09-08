@@ -46,7 +46,6 @@ it ran on, the figures it produced, and the written report.
 
 ## [1.0] Abstract {#10-abstract}
 
-::: {.reveal}
 
 Six laboratory experiments and three computational studies, drawn from the physics
 sequence at NUS. The emphasis throughout is on doing the numerical work by hand before
@@ -66,12 +65,10 @@ doubts a number can follow it back to the measurement.
 <div><span class="k">Repository</span><span class="v">384 files, MIT for code, CC BY-NC-ND for writing</span></div>
 :::
 
-:::
 
 
 ## [2.0] Applied engineering {#20-applied-engineering}
 
-::: {.reveal}
 
 Tools used in the work below, rather than a list of everything encountered.
 
@@ -88,12 +85,10 @@ mapping and Lyapunov divergence.
 carrier types and temperature, Bragg diffraction, torsion dynamometry, and error budgets
 propagated to the quoted figure.
 
-:::
 
 
 ## [3.0] Selected work {#30-selected-work}
 
-::: {.reveal}
 
 ::: {.entry}
 ### [Driven Quadruple Pendulum](projects/quadruple-pendulum/index.qmd)
@@ -133,12 +128,10 @@ by scripted analysis. Every `TRIM.IN` input deck is published, so any figure in 
 can be regenerated from scratch.
 :::
 
-:::
 
 
 ## [4.0] Laboratory record {#40-laboratory-record}
 
-::: {.reveal}
 
 Five bench experiments from PC2193, each published with its raw data and the workbooks the
 analysis was carried out in.
@@ -151,12 +144,10 @@ analysis was carried out in.
 | [4.4] | [X-Ray Diffraction](projects/experimental-physics/index.qmd) | Lattice constants of LiF and KBr, and Planck's constant |
 | [4.5] | [Magnetic Moments](projects/experimental-physics/index.qmd) | Torque in a Helmholtz field against five variables |
 
-:::
 
 
 ## [5.0] Reproducibility {#50-reproducibility}
 
-::: {.reveal}
 
 Fourteen CSV runs sit behind the Hall effect report, including zero-field and zero-current
 controls. Four workbooks sit behind the X-ray diffraction analysis. Forty simulation input
@@ -166,12 +157,10 @@ SRIM regenerates them from the decks, but everything needed to do so is here.
 Where the analysis was carried out in Excel, the workbook is published with its plots and
 fitting intact rather than reduced to a table of results.
 
-:::
 
 
 ## [6.0] Terms {#60-terms}
 
-::: {.reveal}
 
 Code is MIT licensed. Reports, figures and written content are CC BY-NC-ND 4.0, and every
 page of every report carries that notice. These are graded submissions published as a
@@ -184,4 +173,3 @@ before using anything here.
 Work from my research internship is excluded. That data and those results belong to the
 host laboratory and are not mine to publish.
 
-:::
